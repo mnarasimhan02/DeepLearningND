@@ -12595,7 +12595,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
-<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="c1"># Batch Size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span> <span class="c1">#256 seems optimal</span>
 <span class="c1"># RNN Size</span>
@@ -12731,10 +12731,13 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch    0/4   train_loss = 8.821
-Epoch  15 Batch    0/4   train_loss = 3.682
-Epoch  30 Batch    0/4   train_loss = 2.356
-Epoch  45 Batch    0/4   train_loss = 1.559
+<pre>Epoch   0 Batch    0/4   train_loss = 8.823
+Epoch  15 Batch    0/4   train_loss = 3.635
+Epoch  30 Batch    0/4   train_loss = 2.316
+Epoch  45 Batch    0/4   train_loss = 1.487
+Epoch  60 Batch    0/4   train_loss = 1.020
+Epoch  75 Batch    0/4   train_loss = 0.736
+Epoch  90 Batch    0/4   train_loss = 0.478
 Model Trained and Saved
 </pre>
 </div>
@@ -12874,7 +12877,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pick_word</span><span class="p">(</span><span class="n">probabilities</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">):</span>
@@ -12930,7 +12933,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gen_length</span> <span class="o">=</span> <span class="mi">200</span>
@@ -12994,6 +12997,18 @@ Model Trained and Saved
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from ./save
+moe_szyslak:(snide) well, well, all i--(catching himself) hey! quit boring everyone!
+
+
+marge_simpson: simpson here! this unsourced, undated tail and do you drive me to get applesauce for maggie two. wasn&#39;t be. maybe this seat, right next to a(air quotes)&#34;&#34; good book) love.
+bret: well, actually love you, uh, we gotta celebrate! throw a ragin&#39; party! i&#39;ll cash the ticket, homer ya buy me a favor, homer. you need a vacation. perhaps to the south of france.
+marguerite: we&#39;re in the south of france!
+moe_szyslak: exactly.
+bum:(to self) santeria, you&#39;re the greatest!
+homer_simpson: i&#39;ve gotta be honest with the new barney!
+professor_jonathan_frink: aw, me. we gotta have a bar to since the car.
+moe_szyslak: it&#39;s the best musical in this place before i won the springfield lottery!
+homer_simpson: moe, she made this(serious) i&#39;ve gotta know. your and i&#39;ll need to learn /
 </pre>
 </div>
 </div>
